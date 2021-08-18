@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fixup the largeCountries array</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Site Header -->
+        <header>
+            <div class="overlay">
+                <h1 class="title">fixup the largeCountries array</h1>
+            </div>
+        </header>
+
+        <!-- Site content -->
+        <div class="main">
+            <div class="left">
+                <div class="push_countries">
+                    <h3>PUSH Countries</h3>
+                    <p>Add items to the end of an array</p>
+                    <input type="text" id="push_array" />
+                    <input type="button" value="PUSH" onclick="push_countries()" />
+                </div>
+
+                <div class="pop_countries">
+                    <h3>POP Countries</h3>
+                    <p>Remove an item from the end of an array</p>
+                    <input type="button" value="POP" onclick="pop_countries()" />
+                </div>
+
+                <div class="shift_countries">
+                    <h3>SHIFT Countries</h3>
+                    <p>Remove an item from the beginning of an array</p>
+                    <input type="button" value="SHIFT" onclick="shift_countries()" />
+                </div>
+                
+                <div class="unshift_countries">
+                    <h3>UNSHIFT Countries</h3>
+                    <p>Add items to the beginning of an array</p>
+                    <input type="text" id="unshift_array" />
+                    <input type="button" value="UNSHIFT" onclick="unshift_countries()" />
+                </div>
+            </div>
+
+            <div class="right">
+                <h3>Countries List</h3>
+                <div class="list_countries"></div>
+            </div>
+            
+        </div>
+
+         <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                        <a href="https://www.ibn-tech.com/">IBN-TECH</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="myscripts.js"></script>
+</html>
