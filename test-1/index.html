@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Site Header -->
+        <header>
+            <div class="overlay">
+                <h1 class="title">Moving Name without marquee</h1>
+                <p class="header_p">This effect can be achieved using the marquee tag, but the marquee has been deprecated and the new websites do not use this tag.</p>
+            </div>
+        </header>
+
+        <!-- Site content -->
+        <div class="main">
+            <p class="para" id="scrollpara">Arunkumar</p>
+        </div>
+
+         <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                        <a href="https://www.ibn-tech.com/">IBN-TECH</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    <script type="text/javascript">
+        const para = document.getElementById("scrollpara");
+        animate(para);        
+        function animate(element) {
+            let elementWidth = element.offsetWidth;
+            let parentWidth = element.parentElement.offsetWidth;
+            let flag = 0;
+        
+            setInterval(() => {
+                element.style.marginLeft = --flag + "px";
+        
+                if (elementWidth == -flag) {
+                    flag = parentWidth;
+                }
+            }, 10);
+        }
+    </script>
+</html>
